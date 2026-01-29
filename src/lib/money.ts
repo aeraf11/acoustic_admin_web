@@ -1,0 +1,1 @@
+export function money(cents:number,currency:string){const v=cents/100; if((currency||'').toUpperCase()==='GBP') return `£${v.toFixed(2)}`; return `${(currency||'').toUpperCase()} ${v.toFixed(2)}`.trim();}
